@@ -4,7 +4,8 @@ import { SlideSection } from '../../components/Slider'
 import { GAMES } from '../../games'
 import { GameCard } from './GameCard'
 import { WelcomeBanner } from './WelcomeBanner'
-import { TokenValue, useCurrentPool } from 'gamba-react-ui-v2'
+import { TokenValue, useCurrentPool, useUserBalance } from 'gamba-react-ui-v2'
+import { Modal } from '../components/Modal'
 
 export function GameSlider() {
   return (
@@ -63,9 +64,18 @@ export function GameGrid() {
 
 export default function Dashboard() {
   const pool = useCurrentPool()
+  const balance = useUserBalance()
+  const [bonusHelp, setBonusHelp] = React.useState(false)
+  const [jackpotHelp, setJackpotHelp] = React.useState(false)
 
   return (
     <>
+      {jackpotHelp && (
+    <Modal onClose={() => setJackpotHelp(false)}>
+      <h1>Jackpot</h1>
+      <p>There{'\''}s <TokenValue amount={pool.jackpotBalance} /> in the Jackpot.</p>
+    </Modal>
+      )}
       <WelcomeBanner />
 
       <h2 style={{ textAlign: 'center' }}>Games</h2>

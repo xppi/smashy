@@ -1,4 +1,4 @@
-import { TokenValue, useCurrentPool, useUserBalance } from 'gamba-react-ui-v2'
+import { TokenValue, useUserBalance } from 'gamba-react-ui-v2'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
@@ -47,10 +47,8 @@ const Logo = styled(NavLink)`
 `
 
 export default function Header() {
-  const pool = useCurrentPool()
   const balance = useUserBalance()
   const [bonusHelp, setBonusHelp] = React.useState(false)
-  const [jackpotHelp, setJackpotHelp] = React.useState(false)
 
   return (
     <>
@@ -62,12 +60,6 @@ export default function Header() {
           </p>
         </Modal>
       )}
-      {jackpotHelp && (
-        <Modal onClose={() => setJackpotHelp(false)}>
-          <h1>Jackpot</h1>
-          <p>There{'\''}s <TokenValue amount={pool.jackpotBalance} /> in the Jackpot.</p>
-        </Modal>
-      )}
       <StyledHeader>
         <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
           <Logo to="/">
@@ -75,11 +67,6 @@ export default function Header() {
           </Logo>
         </div>
         <div style={{ display: 'flex', gap: '10px', alignItems: 'center', position: 'relative' }}>
-          {pool.jackpotBalance > 0 && (
-            <Bonus onClick={() => setJackpotHelp(true)}>
-              <TokenValue amount={pool.jackpotBalance} />
-            </Bonus>
-          )}
           {balance.bonusBalance > 0 && (
             <Bonus onClick={() => setBonusHelp(true)}>
               +<TokenValue amount={balance.bonusBalance} />
