@@ -5,7 +5,7 @@ import { GAMES } from '../../games'
 import { GameCard } from './GameCard'
 import { WelcomeBanner } from './WelcomeBanner'
 import { TokenValue, useCurrentPool, useUserBalance } from 'gamba-react-ui-v2'
-import { Modal } from '../components/Modal'
+import { Modal } from '../../components/Modal'
 
 export function GameSlider() {
   return (
