@@ -38,16 +38,16 @@ const Bonus = styled.button`
   margin-left: auto!important;
   padding: 10px 30px!important;
   cursor: pointer;
-  color: #f1f1f1;
+  color: #f9ff08;
   border-radius: 0px;
-  border: 1px solid #f5d97e;
+  border: none;
   background: none;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  transition: background .2s;
+  transition: color .2s;
   &:hover {
-    background: radial-gradient(at center,rgba(13,74,61,1),rgba(2,16,40,1))!important;
+    color: #ffa700;
   }
 `
 export function GameGrid() {
@@ -70,7 +70,7 @@ export default function Dashboard() {
 
       <h2 style={{ textAlign: 'center' }}>Games</h2>
       <Bonus>
-        JACKPOT: <TokenValue amount={pool.jackpotBalance} />
+      🏆 JACKPOT: <TokenValue amount={pool.jackpotBalance} />
       </Bonus>
       <GameGrid />
     </>
