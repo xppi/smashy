@@ -6,6 +6,7 @@ import { Modal } from './components/Modal'
 import { StyledSection } from './components/Slider'
 import { useToast } from './hooks/useToast'
 import Dashboard from './sections/Dashboard/Dashboard'
+import Airdrop from './sections/Airdrop/Airdrop'
 import Game from './sections/Game/Game'
 import Header from './sections/Header'
 import RecentPlays from './sections/RecentPlays/RecentPlays'
@@ -54,6 +55,7 @@ export default function App() {
       <StyledSection>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Airdrop />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
         <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>

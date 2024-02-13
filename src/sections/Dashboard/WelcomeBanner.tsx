@@ -104,10 +104,13 @@ export function WelcomeBanner() {
         </p>
       </div>
       <Buttons>
+      <button onClick={() => window.open('/', '_blank')}>
+          🐦 Airdrop
+        </button>
         <button onClick={() => window.open('https://discord.gg/dXYAnPxY2W', '_blank')}>
           💬 Discord
         </button>
-        <button onClick={() => window.open('https://discord.gg/smashygg', '_blank')}>
+        <button onClick={() => window.open('/Airdrop')}>
           🐦 Twitter
         </button>
       </Buttons>
