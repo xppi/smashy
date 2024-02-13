@@ -72,7 +72,7 @@ export default function Dashboard() {
 
       <h2 style={{ textAlign: 'center' }}>Games</h2>
       <Bonus>
-        <TokenValue amount={pool.jackpotBalance} />
+        JACKPOT: <TokenValue amount={pool.jackpotBalance} />
       </Bonus>
       <GameGrid />
     </>
