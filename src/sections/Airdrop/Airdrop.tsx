@@ -3,19 +3,19 @@ import styled from "styled-components";
 import { GameSlider } from "../Dashboard/Dashboard";
 
 const Wrapper = styled.div`
-  background-color: #f4f7f6; /* Soft background color */
-  color: #333; /* Darker text for contrast */
+  color: #f1f1f1;
   text-align: center;
+  border-radius: 14px;
   padding: 20px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 `;
 
 const Title = styled.h1`
-  color: #22a7f0; /* Bright blue for emphasis */
+  color: #f1f1f1; /* Bright blue for emphasis */
 `;
 
 const Subtitle = styled.h2`
-  color: #3498db; /* Slightly darker blue for depth */
+  color: #f1f1f1; /* Slightly darker blue for depth */
 `;
 
 const Text = styled.p`
