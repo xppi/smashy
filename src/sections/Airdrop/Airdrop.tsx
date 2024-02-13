@@ -87,7 +87,7 @@ export default function Airdrop() {
 
         <Subtitle>How Does the Airdrop Work?</Subtitle>
         <Text>
-          The more you play and wager, the more Airdrop points you accumulate.
+          The more you play and wager, the more Airdrop points you accumulate. <br />
           These points can be redeemed for various rewards, such as exclusive
           in-game items, discounts, and much more!
         </Text>
