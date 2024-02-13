@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -95,6 +96,8 @@ const Welcome = styled.div`
 `
 
 export function WelcomeBanner() {
+  const navigate = useNavigate(); // Use the useNavigate hook
+
   return (
     <Welcome>
       <div>
@@ -104,15 +107,16 @@ export function WelcomeBanner() {
         </p>
       </div>
       <Buttons>
-      <button onClick={() => window.open('/', '_blank')}>
-          🐦 Airdrop
+      <button onClick={() => navigate("/airdrop")}> {/* Update this line */}
+          💰 AIRDROP
+        </button>
+      <button onClick={() => window.open('https://x.com/dXYAnPxY2W', '_blank')}>
+          🐦 X.COM
         </button>
         <button onClick={() => window.open('https://discord.gg/dXYAnPxY2W', '_blank')}>
-          💬 Discord
+          💬 DISCORD
         </button>
-        <button onClick={() => window.open('/Airdrop')}>
-          🐦 Twitter
-        </button>
+
       </Buttons>
     </Welcome>
   )
