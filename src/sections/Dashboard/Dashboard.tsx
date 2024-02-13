@@ -49,7 +49,7 @@ margin:
   font-weight: bold;
   transition: background .2s;
   &:hover {
-    background: white;
+    background: radial-gradient(at center,rgba(13,74,61,1),rgba(2,16,40,1));
   }
 `
 export function GameGrid() {
