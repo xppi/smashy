@@ -33,7 +33,6 @@ const Grid = styled.div`
   }
 `
 const Bonus = styled.button`
-margin: 
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
