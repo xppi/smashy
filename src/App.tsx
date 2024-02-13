@@ -54,7 +54,7 @@ export default function App() {
       <Toasts />
       <StyledSection>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/" element={<Airdrop />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
