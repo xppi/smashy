@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-
+import { GAMES } from '../../games'
+import { GameCard } from '../Dashboard/GameCard'
+const Wrapper = styled.div`
+  text-align: center;
+`;
 const Grid = styled.div`
   display: grid;
   gap: 1rem;
-  text-align: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   @media (min-width: 600px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -15,31 +18,21 @@ const Grid = styled.div`
   @media (min-width: 1200px) {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-`;
+`
+export function GameGrid() {
 
-const Bonus = styled.button`
-  width: fit-content !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  padding: 10px 30px !important;
-  cursor: pointer;
-  color: #f9ff08;
-  border-radius: 0px;
-  border: none;
-  background: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: color 0.2s;
-  &:hover {
-    color: #ffa700;
-  }
-`;
-
+  return (
+    <Grid>
+      {GAMES.map((game) => (
+        <GameCard key={game.id} game={game} />
+      ))}
+    </Grid>
+  )
+}
 export default function Airdrop() {
   return (
     <>
-      <div>
+      <Wrapper>
         <h1>$SMSH Airdrop Tutorial</h1>
         <h2>Earn Airdrop Points on smashy.gg!</h2>
 
@@ -81,7 +74,8 @@ export default function Airdrop() {
         </p>
 
         <p>Have fun and happy gaming!</p>
-      </div>
+      </Wrapper>
+      <GameGrid />
     </>
   );
 }
