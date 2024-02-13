@@ -54,8 +54,8 @@ export default function App() {
       <Toasts />
       <StyledSection>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/" element={<Airdrop />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/airdrop" element={<Airdrop />} />
           <Route path="/:gameId" element={<Game />} />
         </Routes>
         <h2 style={{ textAlign: 'center' }}>Recent Plays</h2>
