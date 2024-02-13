@@ -105,7 +105,7 @@ export const LoadingIndicator = styled.div<{$active: boolean}>`
     position: absolute;
     width: 25%;
     height: 100%;
-    animation: ${loadingAnimation} ease infinite 5s;
+    animation: ${loadingAnimation} ease infinite 2.5s;
     opacity: 0;
     background: #9564ff;
     transition: opacity .5s;
