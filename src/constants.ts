@@ -15,7 +15,7 @@ export const TOKENS: TokenMeta[] = [
   GambaStandardTokens.sol,
   GambaStandardTokens.usdc,
    {
-     mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
+     mint: new PublicKey("GMcrYayakAWEiKYdSmWfGK1dyniHrDbdc8967N8w7wg2"),
      symbol: 'JUP',
      name: 'Jupiter',
      image: "https://static.jup.ag/jup/icon.png",
