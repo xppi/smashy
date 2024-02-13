@@ -39,7 +39,7 @@ const Bonus = styled.button`
   margin-left: auto!important;
   padding: 10px 30px!important;
   cursor: pointer;
-  color: #f9ff08;
+  color: rgb(255 191 47);
   border-radius: 0px;
   border: none;
   background: none;

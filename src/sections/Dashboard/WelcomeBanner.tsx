@@ -27,12 +27,13 @@ const Buttons = styled.div`
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    background: #ffffffdf;
+    background: rgb(3 6 6);
     transition: background .2s ease;
     &:hover {
-      background: white;
+      background: #020808;
     }
-    color: black;
+    border-bottom: 3px solid #01161a;
+    color: #f1f1f1;
     cursor: pointer;
   }
 `
