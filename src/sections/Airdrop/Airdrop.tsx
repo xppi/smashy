@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { WelcomeBanner } from "./WelcomeBanner";
 
 const Grid = styled.div`
   display: grid;
@@ -39,8 +38,6 @@ const Bonus = styled.button`
 export default function Airdrop() {
   return (
     <>
-      <WelcomeBanner />
-
       <div>
         <h1>$SMSH Airdrop Tutorial</h1>
         <h2>Verdienen Sie Airdrop-Punkte auf smashy.gg!</h2>
