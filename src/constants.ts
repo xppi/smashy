@@ -8,7 +8,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? "https://rpc.he
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey('A1yPM7RjvUetd6Fq8VRTatPSsidqWWwydascNShkVc91')
 
 // Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = 'v2-play.gamba.so'
+export const PLATFORM_SHARABLE_URL = 'smashy.gg'
 
 // List of tokens supported by this platform
 export const TOKENS: TokenMeta[] = [
