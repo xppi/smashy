@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Modal } from '../components/Modal'
+import { Modal } from '../../components/Modal'
 import { TokenValue, useCurrentPool, useUserBalance } from 'gamba-react-ui-v2'
 
 const Buttons = styled.div`
