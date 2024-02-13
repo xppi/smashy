@@ -111,7 +111,7 @@ export function WelcomeBanner() {
       <button onClick={() => navigate("/airdrop")}> {/* Update this line */}
           💰 AIRDROP
         </button>
-      <button onClick={() => window.open('https://x.com/dXYAnPxY2W', '_blank')}>
+      <button onClick={() => window.open('https://x.com/smashygg', '_blank')}>
           🐦 X.COM
         </button>
         <button onClick={() => window.open('https://discord.gg/dXYAnPxY2W', '_blank')}>
