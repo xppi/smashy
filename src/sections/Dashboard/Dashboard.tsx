@@ -33,11 +33,10 @@ const Grid = styled.div`
   }
 `
 const Bonus = styled.button`
-  width: fit-content;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 10px 30px;
-  all: unset;
+  width: fit-content!important;
+  margin-right: auto!important;
+  margin-left: auto!important;
+  padding: 10px 30px!important;
   cursor: pointer;
   color: #f1f1f1;
   border-radius: 0px;
@@ -48,7 +47,7 @@ const Bonus = styled.button`
   font-weight: bold;
   transition: background .2s;
   &:hover {
-    background: radial-gradient(at center,rgba(13,74,61,1),rgba(2,16,40,1));
+    background: radial-gradient(at center,rgba(13,74,61,1),rgba(2,16,40,1))!important;
   }
 `
 export function GameGrid() {
