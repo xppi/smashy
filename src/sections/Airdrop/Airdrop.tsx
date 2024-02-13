@@ -1,56 +1,92 @@
 import React from "react";
 import styled from "styled-components";
-import { GameSlider } from '../Dashboard/Dashboard'
+import { GameSlider } from "../Dashboard/Dashboard";
 
 const Wrapper = styled.div`
+  background-color: #f4f7f6; /* Soft background color */
+  color: #333; /* Darker text for contrast */
   text-align: center;
+  padding: 20px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+`;
+
+const Title = styled.h1`
+  color: #22a7f0; /* Bright blue for emphasis */
+`;
+
+const Subtitle = styled.h2`
+  color: #3498db; /* Slightly darker blue for depth */
+`;
+
+const Text = styled.p`
+  line-height: 1.6;
+`;
+
+const List = styled.ol`
+  text-align: left;
+  display: inline-block;
+  margin: auto;
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 10px;
+`;
+
+const TipsList = styled.ul`
+  text-align: left;
+  display: inline-block;
+  margin: auto;
+`;
+
+const TipsItem = styled.li`
+  margin-bottom: 10px;
 `;
 
 export default function Airdrop() {
   return (
     <>
       <Wrapper>
-        <h1>$SMSH Airdrop Tutorial</h1>
-        <h2>Earn Airdrop Points on smashy.gg!</h2>
+        <Title>$SMSH Airdrop Tutorial</Title>
+        <Subtitle>Earn Airdrop Points on smashy.gg!</Subtitle>
 
-        <p>
+        <Text>
           Welcome to the $SMSH Airdrop program on smashy.gg! Play and wager to
           collect more Airdrop points and earn fantastic rewards.
-        </p>
+        </Text>
 
-        <h3>How to Earn Airdrop Points:</h3>
-        <ol>
-          <li>Play games on smashy.gg and complete challenges.</li>
-          <li>
+        <Subtitle>How to Earn Airdrop Points:</Subtitle>
+        <List>
+          <ListItem>Play games on smashy.gg and complete challenges.</ListItem>
+          <ListItem>
             Wager on your favorite games to earn additional Airdrop points.
-          </li>
-          <li>Participate in special events and promotions on the platform.</li>
-        </ol>
+          </ListItem>
+          <ListItem>Participate in special events and promotions on the platform.</ListItem>
+        </List>
 
-        <h3>How Does the Airdrop Work?</h3>
-        <p>
+        <Subtitle>How Does the Airdrop Work?</Subtitle>
+        <Text>
           The more you play and wager, the more Airdrop points you accumulate.
           These points can be redeemed for various rewards, such as exclusive
           in-game items, discounts, and much more!
-        </p>
+        </Text>
 
-        <h3>Tips for Maximum Airdrop Points:</h3>
-        <ul>
-          <li>
+        <Subtitle>Tips for Maximum Airdrop Points:</Subtitle>
+        <TipsList>
+          <TipsItem>
             Explore different games and challenges to maximize your points.
-          </li>
-          <li>Don't miss out on special promotions and events on smashy.gg.</li>
-          <li>
+          </TipsItem>
+          <TipsItem>Don't miss out on special promotions and events on smashy.gg.</TipsItem>
+          <TipsItem>
             Stay active and engaged to continuously collect Airdrop points.
-          </li>
-        </ul>
+          </TipsItem>
+        </TipsList>
 
-        <p>
+        <Text>
           Ready to get started? Visit smashy.gg now and earn your Airdrop
           points!
-        </p>
+        </Text>
 
-        <p>Have fun and happy gaming!</p>
+        <Text>Have fun and happy gaming!</Text>
       </Wrapper>
       <GameSlider />
     </>
