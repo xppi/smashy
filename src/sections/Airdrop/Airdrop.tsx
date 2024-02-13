@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   border-radius: 14px;
   padding: 20px;
   ${baseTextStyles};
-  background: #333; /* Subtle background for depth, replace with desired non-color style if needed */
+  background: #33333361; /* Subtle background for depth, replace with desired non-color style if needed */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 `;
 
