@@ -1,44 +1,66 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { GameSlider } from "../Dashboard/Dashboard";
 
-const Wrapper = styled.div`
+const baseTextStyles = css`
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f1f1f1;
+  margin: 0;
+  padding: 0.25em 0;
+`;
+
+const Wrapper = styled.div`
   text-align: center;
   border-radius: 14px;
   padding: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  ${baseTextStyles};
+  background: #333; /* Subtle background for depth, replace with desired non-color style if needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 `;
 
 const Title = styled.h1`
-  color: #f1f1f1; /* Bright blue for emphasis */
+  ${baseTextStyles};
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 `;
 
-const Subtitle = styled.h2`
-  color: #f1f1f1; /* Slightly darker blue for depth */
+const Subtitle = styled.h4`
+  ${baseTextStyles};
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
 `;
 
 const Text = styled.p`
+  ${baseTextStyles};
   line-height: 1.6;
+  margin-top: 1em;
 `;
 
-const List = styled.ol`
+const listStyles = css`
   text-align: left;
   display: inline-block;
   margin: auto;
+  padding-left: 20px; /* Ensure alignment */
+`;
+
+const List = styled.ol`
+  ${listStyles};
 `;
 
 const ListItem = styled.li`
+  ${baseTextStyles};
   margin-bottom: 10px;
 `;
 
 const TipsList = styled.ul`
-  text-align: left;
-  display: inline-block;
-  margin: auto;
+  ${listStyles};
 `;
 
 const TipsItem = styled.li`
+  ${baseTextStyles};
   margin-bottom: 10px;
 `;
 
