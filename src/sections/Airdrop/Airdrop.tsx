@@ -68,8 +68,8 @@ export default function Airdrop() {
   return (
     <>
       <Wrapper>
-        <Title>$SMSH Airdrop Tutorial</Title>
-        <Subtitle>Earn Airdrop Points on smashy.gg!</Subtitle>
+        <Title>$SMSH Airdrop Details</Title>
+        <Subtitle>Earn Airdrop Points on smashy.gg while playing your favorite games!</Subtitle>
 
         <Text>
           Welcome to the $SMSH Airdrop program on smashy.gg! Play and wager to
@@ -104,8 +104,7 @@ export default function Airdrop() {
         </TipsList>
 
         <Text>
-          Ready to get started? Visit smashy.gg now and earn your Airdrop
-          points!
+          Ready to get started? Select a game below and start playing!
         </Text>
 
         <Text>Have fun and happy gaming!</Text>
