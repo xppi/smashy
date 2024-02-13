@@ -14,12 +14,12 @@ export const PLATFORM_SHARABLE_URL = 'smashy.gg'
 export const TOKENS: TokenMeta[] = [
   GambaStandardTokens.sol,
   GambaStandardTokens.usdc,
-  // {
-  //   mint: new PublicKey(""),
-  //   symbol: '???',
-  //   name: 'Custom SPL Token',
-  //   image: "image url",
-  //   decimals: 1e9,
-  //   baseWager: 1,
-  // }
+   {
+     mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
+     symbol: 'JUP',
+     name: 'Jupiter',
+     image: "https://static.jup.ag/jup/icon.png",
+     decimals: 1e9,
+     baseWager: 0.005,
+   }
 ]
