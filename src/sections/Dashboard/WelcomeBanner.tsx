@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Modal } from '../components/Modal'
+import { TokenValue, useCurrentPool, useUserBalance } from 'gamba-react-ui-v2'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -95,10 +97,41 @@ const Welcome = styled.div`
     }
   }
 `
+const BonusBanner = styled.button`
+  all: unset;
+  cursor: pointer;
+  color: #003c00;
+  border-radius: 10px;
+  background: #03ffa4;
+  padding: 2px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background .2s;
+  &:hover {
+    background: white;
+  }
+`
 
 export function WelcomeBanner() {
+  const pool = useCurrentPool()
+  const balance = useUserBalance()
+  const [bonusHelp, setBonusHelp] = React.useState(false)
+  const [jackpotHelp, setJackpotHelp] = React.useState(false)
+
   return (
     <Welcome>
+      {jackpotHelp && (
+        <Modal onClose={() => setJackpotHelp(false)}>
+          <h1>Jackpot</h1>
+          <p>There{'\''}s <TokenValue amount={pool.jackpotBalance} /> in the Jackpot.</p>
+        </Modal>
+      )}
+              {pool.jackpotBalance > 0 && (
+            <BonusBanner onClick={() => setJackpotHelp(true)}>
+              <TokenValue amount={pool.jackpotBalance} />
+            </BonusBanner>
+          )}
       <div>
         <h1>Welcome to Gamba v2 👋</h1>
         <p>
