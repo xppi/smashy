@@ -33,13 +33,17 @@ const Grid = styled.div`
   }
 `
 const Bonus = styled.button`
+margin: 
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 30px;
   all: unset;
   cursor: pointer;
-  color: #003c00;
+  color: #f1f1f1;
   border-radius: 0px;
   border: 1px solid #f5d97e;
   background: none;
-  padding: 8px 10px;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -65,10 +69,11 @@ export default function Dashboard() {
   return (
     <>
       <WelcomeBanner />
+
+      <h2 style={{ textAlign: 'center' }}>Games</h2>
       <Bonus>
         <TokenValue amount={pool.jackpotBalance} />
       </Bonus>
-      <h2 style={{ textAlign: 'center' }}>Games</h2>
       <GameGrid />
     </>
   )
