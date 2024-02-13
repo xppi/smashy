@@ -102,13 +102,13 @@ export const LoadingIndicator = styled.div<{$active: boolean}>`
   border-radius: 10px;
   &:after {
     content: " ";
-    position: absolute;
+    position: absolute2
     width: 25%;
     height: 100%;
-    animation: ${loadingAnimation} ease infinite .5s;
+    animation: ${loadingAnimation} ease infinite 5s;
     opacity: 0;
     background: #9564ff;
-    transition: opacity .5s;
+    transition: opacity 5s;
     ${(props) => props.$active && css`
       opacity: 1;
     `}
