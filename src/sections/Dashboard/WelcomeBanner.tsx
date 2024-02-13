@@ -58,9 +58,7 @@ const Welcome = styled.div`
     }
   }
 
-  background: rgb(15, 18, 27);
-  background-size: 300% 300%;
-  animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
+  background: #00000047!important;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
