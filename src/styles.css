@@ -187,11 +187,13 @@ a {
 .gamba-wager-input-field {
   display: flex;
 }
-.gamba-game-ui-play-button {
-  background: #0b3d3830;
+
+button {
+  background: #0b3d3830!important;
+  background-color: #0b3d3830!important;
   color: #ffe182;
   font-weight: 1000;
   border: 2px solid #29cbbe14;
-  border-bottom: 4px solid #0b161c;
-  border-radius: 5px;
+  border-bottom: 4px solid #0b161c!important;
+  border-radius: 5px!important;
 }
