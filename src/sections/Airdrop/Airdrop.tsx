@@ -99,11 +99,13 @@ export default function Airdrop() {
 
         <Subtitle>How to Earn Airdrop Points:</Subtitle>
         <List>
-          <ListItem>Play games on smashy.gg</ListItem>
+          <ListItem>Play games on <a href="https://smashy.gg"> here</a>smashy.gg</ListItem>
           <ListItem>
-            Complete Zealay quests <a href="https://zealay.io"> here</a>
+            Complete Zealay quests <a href="https://zealy.io/cw/smashygg/questboard"> here</a>
           </ListItem>
-          <ListItem>Participate in special events and promotions on our discord.</ListItem>
+          <ListItem>Participate in special events and promotions on our <a href="https://discord.gg/dXYAnPxY2W"> here</a>.</ListItem>
+          <ListItem>👀</ListItem>
+          <ListItem>👀</ListItem>
         </List>
 
         <Subtitle>How Does the Airdrop Work?</Subtitle>
